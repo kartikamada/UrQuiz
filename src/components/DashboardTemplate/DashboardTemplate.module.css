@@ -1,6 +1,6 @@
 .container {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .dashboard-template {
@@ -8,7 +8,6 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
-  position: relative;
 }
 
 .dashboard-template header {
@@ -65,19 +64,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #e0e0e8;
-    padding: 10rem;
+    padding: 2rem 4rem;
     gap: 4rem;
   }
 
+  .title-container {
+    padding: 0;
+  }
+
   .dashboard-template {
-    width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
     border-radius: 1rem;
     background: #ebeaef;
+    padding: 2rem;
   }
 
   .dashboard-template header {
     background: none;
-    padding: 0 0 6rem 0;
+    padding: 0;
   }
 
   .dashboard-template header h1 {
@@ -89,17 +96,23 @@
     );
     color: transparent;
     background-clip: text;
+    font-size: 1.4rem;
+  }
+
+  .dashboard-template section {
+    margin: 0;
   }
 
   .aside {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
     gap: 4rem;
-    width: 80%;
   }
 
   .aside h2 {
+    text-transform: uppercase;
     background-image: linear-gradient(
       90deg,
       #a777ff 0%,
@@ -108,11 +121,11 @@
     );
     color: transparent;
     background-clip: text;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .aside h3 {
-    font-size: 2rem;
+    font-size: 1.2em;
     font-weight: 500;
   }
 }
