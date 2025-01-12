@@ -1,0 +1,171 @@
+.container {
+  background-color: #ebeaef;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: relative;
+  height: 2.5rem;
+}
+
+.title > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title > *:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.title > *:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.quit-button {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f4f3f6;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.question {
+  color: #191d63;
+  min-height: 12rem;
+}
+
+.question h1 {
+  font-weight: 600;
+}
+
+.answers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.error {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.error > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.error > button {
+  background: #31cd63;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.complete-container {
+  background-color: #ebeaef;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.complete-container header {
+  text-align: center;
+}
+
+.complete-container img {
+  width: 200px;
+}
+
+.complete-container section {
+  width: 100%;
+}
+
+.complete-container table {
+  background: linear-gradient(
+    264.18deg,
+    rgba(180, 241, 234, 0.6) 20.86%,
+    rgba(113, 233, 220, 0.6) 37.73%,
+    rgba(168, 131, 251, 0.6) 82.95%
+  );
+
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.complete-container table * {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.complete-container table tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebeaef;
+  padding: 1rem;
+}
+
+.complete-container button {
+  background: #16193d;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .question {
+    text-align: center;
+  }
+
+  .progress {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .answers {
+    width: 500px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  .complete-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

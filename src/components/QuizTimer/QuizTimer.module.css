@@ -1,0 +1,13 @@
+.quiz-timer {
+  width: 4rem;
+  background: #f4f3f6;
+  color: #191d63;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.critical {
+  background: #a40021;
+  color: white;
+}

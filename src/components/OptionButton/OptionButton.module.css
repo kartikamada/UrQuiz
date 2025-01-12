@@ -1,0 +1,23 @@
+.button {
+  background: linear-gradient(
+    90deg,
+    rgba(172, 128, 253, 0.6) 0%,
+    rgba(115, 231, 221, 0.6) 58.93%,
+    rgba(180, 241, 234, 0.6) 100%
+  );
+
+  padding: 1.4rem 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.01);
+}
+
+.text {
+  text-align: center;
+}
